@@ -6,7 +6,7 @@ class Person:
         self.qualification = q
     
     def __del__(self):
-        return "До свидания, мистер " + self.name + " " + self.surname
+        print("До свидания, мистер " + self.name + " " + self.surname)
 
     def MainInformation(self):
-        print(self.surname + " " + self.name + ". Квалификация:" + str(self.qualification))
+        return self.surname + " " + self.name + ". Квалификация:" + str(self.qualification)
